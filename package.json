@@ -14,7 +14,9 @@
     "i18n_extract": "BABEL_ENV=i18n fedx-scripts babel src --quiet > /dev/null",
     "lint": "fedx-scripts eslint --ext .js --ext .jsx .",
     "snapshot": "fedx-scripts jest --updateSnapshot",
-    "start": "fedx-scripts webpack-dev-server --progress",
+    "start": "npm run start-devstack",
+    "start-devstack": "DEVELOPMENT_ENVIRONMENT=devstack fedx-scripts webpack-dev-server --progress",
+    "start-tutor": "DEVELOPMENT_ENVIRONMENT=tutor fedx-scripts webpack-dev-server --progress",
     "test": "fedx-scripts jest --coverage --passWithNoTests"
   },
   "husky": {
@@ -69,7 +71,7 @@
   },
   "devDependencies": {
     "@edx/browserslist-config": "^1.1.1",
-    "@edx/frontend-build": "12.8.16",
+    "@edx/frontend-build": "github:brian-smith-tcril/frontend-build#tutor-dotenvs",
     "@edx/reactifex": "1.1.0",
     "babel-plugin-formatjs": "10.5.0",
     "enzyme": "3.11.0",

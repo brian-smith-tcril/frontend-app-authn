@@ -11,6 +11,7 @@ const siteConfig: SiteConfig = {
   lmsBaseUrl: 'http://local.openedx.io:8000',
   loginUrl: 'http://local.openedx.io:8000/login',
   logoutUrl: 'http://local.openedx.io:8000/logout',
+  runtimeConfigJsonUrl: 'http://localhost:11999/config.dev.json',
 
   environment: EnvironmentTypes.DEVELOPMENT,
   basename: '/authn',

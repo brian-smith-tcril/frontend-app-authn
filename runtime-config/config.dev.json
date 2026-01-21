@@ -1,0 +1,8 @@
+{
+  "apps": [{
+    "appId": "org.openedx.frontend.app.authn",
+    "config": {
+      "LOGO_WHITE_URL": "https://picsum.dev/150/100"
+    }
+  }]
+}

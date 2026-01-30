@@ -22,6 +22,7 @@
   ],
   "scripts": {
     "dev": "PORT=1999 PUBLIC_PATH=/authn openedx dev",
+    "dev-with-autoinstall": "PORT=1999 devutils-dev-with-autoinstall",
     "i18n_extract": "openedx formatjs extract",
     "lint": "openedx lint .",
     "lint:fix": "openedx lint --fix .",
@@ -63,6 +64,7 @@
   },
   "devDependencies": {
     "@edx/browserslist-config": "^1.5.0",
+    "@openedx/frontend-dev-utils": "file:../frontend-dev-utils",
     "@testing-library/react": "^16.3.0",
     "babel-plugin-formatjs": "10.5.38",
     "eslint-plugin-import": "2.31.0",
